@@ -39,10 +39,10 @@ function checkPush(branchname) {
 
 function findFile() {
   // see if user is already within /contributors
-  if (process.cwd().match("contributors")) {
+  if (process.cwd().match("CONTRIBUTORS")) {
     check(process.cwd())
   } else {
-    check(path.join(process.cwd(), "/contributors/"))
+    check(path.join(process.cwd(), "/CONTRIBUTORS/"))
   }
 
   function check(userspath) {
